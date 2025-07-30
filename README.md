@@ -97,5 +97,5 @@ The goal of this project is to enhance physical access security by:
 ---
 ## Author
 Kwabena E. Amoako
-Engineering | Embedded Systems | Robotics | IoT Automation
-Feel free to contribute or suggest improvements to make the system more robust and scalable!
+- Engineering | Embedded Systems | Robotics | IoT Automation
+- Feel free to contribute or suggest improvements to make the system more robust and scalable!
