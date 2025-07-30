@@ -14,12 +14,6 @@ time_out = 1.0
 threshold = 5 # seconds
 counter = 0 # image counter
 
-def photo_handler(update, context):
-    with open(f"{photo}{image_name}","rb") as image_file:
-        print("Sending photo to telegram")
-        last_image_taken = image_file.read().rstrip()
-        context.bot.send_photo(chat_id=update.effective_chat.id,photo=last_image_taken, caption=f"Send /open or /deny")
-
 # allow access
 def open_handler(update, context):
     cmd = update.message.text[1:]
@@ -44,7 +38,6 @@ updater = Updater(token=token)
 dispatcher = updater.dispatcher
 
 # handler
-dispatcher.add_handler(CommandHandler("photo", photo_handler))
 dispatcher.add_handler(CommandHandler("open", open_handler))
 dispatcher.add_handler(CommandHandler("deny", deny_handler))
 updater.start_polling()
