@@ -5,9 +5,9 @@ from telegram import Bot
 from telegram.ext import Updater, CommandHandler
 
 # variables
-chat_id = "-4818602009"
-path = "/home/chestnut/.local/share/.telegram_bot_token"
-photo = "/home/chestnut/code/images/"
+chat_id = "your chat ID"
+path = "path/to/telegram/token" 
+photo = "path/to/image/folder"
 port = "/dev/ttyACM0"
 baudrate = 115200
 time_out = 1.0
