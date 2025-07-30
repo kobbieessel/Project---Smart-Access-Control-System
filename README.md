@@ -1,6 +1,6 @@
 # Smart Access Control System
 
-A smart IoT-based access control solution using **Arduino** and **Raspberry Pi** to monitor and manage door entry securely and remotely. This system uses computer vision, servo-controlled door movement, LED indicators, a buzzer, and a Telegram bot for real-time alerts and remote access control.
+A smart IoT-based access control solution using **Arduino** and **Raspberry Pi** to monitor and manage door entry securely and remotely. This system uses a camera, servo-controlled door movement, LED indicators, a buzzer, and a Telegram bot for real-time alerts and remote access control.
 
 ---
 
@@ -25,11 +25,12 @@ The goal of this project is to enhance physical access security by:
 | Arduino Uno                             | Controls button, servo, LEDs, buzzer          |
 | Raspberry Pi                            | Captures images and communicates via Telegram |
 | Servo Motor                             | Mechanically opens/closes the door            |
+| Camera                                  | Capture image of visitor                      |
 | Push Button                             | Triggered by visitor                          |
 | Buzzer                                  | Provides audio feedback                       |
 | RGB LEDs (Red, Green, Blue)             | Indicates access status                       |
 | I2C LCD Display (16x2)                  | Displays user messages                        |
-| 4 Resistor (3x330 ohms and 1k resistor) | Current control                       |
+| 4 Resistor (3x330 ohms and 1k resistor) | Current control                               |
 | Jumper Wires                            | For circuit connections                       |
 | Breadboard / PCB                        | For assembling the circuit                    |
 | USB Cable                               | For Arduino–Raspberry Pi serial communication |
@@ -88,3 +89,13 @@ The goal of this project is to enhance physical access security by:
 ├── .telegram_bot_token        # Stores Telegram bot token (keep private)
 ├── README.md                  # Project documentation
 ```
+---
+## Security Considerations
+- Do not upload your bot token or .telegram_bot_token file to GitHub.
+- Ensure only trusted users can send commands to your bot.
+- Secure access to your Raspberry Pi with a strong password or SSH key.
+---
+## Author
+Kwabena E. Amoako
+Engineering | Embedded Systems | Robotics | IoT Automation
+Feel free to contribute or suggest improvements to make the system more robust and scalable!
